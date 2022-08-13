@@ -1,0 +1,38 @@
+.container-footer-form {
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 93px;
+  margin-right: 10px;
+}
+
+.footer-label {
+  display: flex;
+  flex-direction: column;
+}
+.footer__text {
+  color: var(--btn-txt-cl);
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer__input {
+  background-color: transparent;
+  width: 358px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px 16px;
+
+  color: var(--btn-txt-cl);
+}

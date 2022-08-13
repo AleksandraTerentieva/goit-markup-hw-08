@@ -1,0 +1,129 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--dark-bg-cl);
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__list {
+  @extend %reset-list;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.footer-logo-link {
+  @extend %reset-link;
+  font-family: var(--secondary-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--btn-txt-cl);
+  padding-bottom: 20px;
+}
+
+.footer-logo-accent {
+  color: var(--accent-txt-cl);
+}
+
+.footer__item {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+
+.footer__link {
+  @extend %reset-link;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--btn-txt-cl);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-txt-cl);
+  }
+}
+
+.footer__mail,
+.footer__phone {
+  @extend %reset-link;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus,
+  &:hover,
+  &:focus {
+    color: var(--accent-txt-cl);
+  }
+}
+
+.footer__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--btn-txt-cl);
+}
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  width: 231px;
+  margin-right: 70px;
+}
+
+.footer-right-list {
+  @extend %reset-list;
+  display: flex;
+  align-items: center;
+  justify-content: normal;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.socials-footer-link {
+  @extend %reset-link;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: color var(--animation), background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--btn-txt-cl);
+    background-color: var(--accent-txt-cl);
+  }
+}
+
+.footer__icon {
+  fill: currentColor;
+  transition: fill var(--animation);
+}

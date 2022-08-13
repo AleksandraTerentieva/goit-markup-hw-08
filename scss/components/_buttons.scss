@@ -1,0 +1,151 @@
+/**
+  |============================
+  | block 3
+  |============================
+*/
+
+.btn {
+  @extend %reset-list;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 50px;
+  border-radius: 4px;
+
+  .btn-mode-ligh {
+    color: var(--main-txt-cl);
+  }
+}
+
+.hero__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  min-width: 200px;
+  min-height: 50px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+  background-color: var(--accent-txt-cl);
+  color: var(--btn-txt-cl);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-hero-hover);
+  }
+}
+
+.work-btn-item {
+  padding: 6px 22px;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  letter-spacing: 0.03em;
+  background-color: var(--light-bg-cl);
+  cursor: pointer;
+  transition: background-color var(--animation), color var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-txt-cl);
+    color: var(--btn-txt-cl);
+  }
+}
+
+.modal__btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--btn-txt-cl);
+  cursor: pointer;
+
+  &:hover .modal-btn-icon,
+  &:focus .modal-btn-icon {
+    fill: var(--accent-txt-cl);
+  }
+
+  .modal-btn-icon {
+    fill: #000;
+    transition: fill var(--animation);
+  }
+}
+
+.footer-btn {
+  display: flex;
+  align-items: center;
+
+  background-color: var(--accent-txt-cl);
+  color: var(--btn-txt-cl);
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 1.88;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+
+  padding-left: 29px;
+  padding-right: 29px;
+  height: 50px;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-txt-cl);
+  }
+
+  .footer-btn-icon {
+    fill: currentColor;
+    margin-left: 10px;
+  }
+}
+
+.modal-modal-btn {
+  display: block;
+  margin: 0 auto;
+
+  background-color: var(--accent-txt-cl);
+  color: var(--btn-txt-cl);
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 1.88;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  padding: 10px 55px;
+  margin-top: 30px;
+
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  transition: background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-hero-hover);
+  }
+}

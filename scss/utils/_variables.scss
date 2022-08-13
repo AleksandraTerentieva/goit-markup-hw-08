@@ -1,0 +1,30 @@
+:root {
+  /* fonts */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* text colors */
+  --main-txt-cl: #212121;
+  --accent-txt-cl: #2196f3;
+  --btn-txt-cl: #ffffff;
+  --contacts-txt-cl: #757575;
+  --title-txt-cl: #e5e5e5;
+  --main-title-txt-cl: #e5e5e5;
+  --links-txt-cl: #afb1b8;
+
+  /* bg colors */
+  --dark-bg-cl: #2f303a;
+  --light-bg-cl: #f5f4fa;
+  --btn-hero-hover: #188ce8;
+
+  /* Others */
+  --indent: 30px;
+  --items: 3;
+  --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/**
+    |============================
+    | block 1
+    |============================
+  */
