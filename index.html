@@ -28,9 +28,14 @@
 
   <body>
     <!-- header section -->
-    <header class="header">
+    <header class="header" data-header>
       <div class="container header__container">
         <a class="logo header__logo" href="#" lang="en"><span class="header__logo-acent">Web</span>Studio</a>
+        <button type="button" class="menu-btn" data-menu-open>
+          <svg width="40" height="40" class="header__btn-svg" aria-label="menu">
+            <use href="./images/icons.svg#icon-menu" class="header__icon-menu"></use>
+          </svg>
+        </button>
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
@@ -150,7 +155,7 @@
       <!-- team section -->
       <section class="team card-set">
         <div class="container team__container">
-          <h2>Наша команда</h2>
+          <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item card-set-item">
               <img
@@ -161,8 +166,8 @@
                 height="260"
               />
               <div class="team__item-wrapper">
-                <h3>Игорь Демьяненко</h3>
-                <p>Product Designer</p>
+                <h3 class="item__title">Игорь Демьяненко</h3>
+                <p class="item__desc">Product Designer</p>
                 <ul class="socials list">
                   <li class="socials__socials-item">
                     <a
@@ -228,8 +233,8 @@
                 height="260"
               />
               <div class="team__item-wrapper">
-                <h3>Ольга Репина</h3>
-                <p>Frontend Developer</p>
+                <h3 class="item__title">Ольга Репина</h3>
+                <p class="item__desc">Frontend Developer</p>
                 <ul class="socials list">
                   <li class="socials__socials-item">
                     <a
@@ -295,8 +300,8 @@
                 height="260"
               />
               <div class="team__item-wrapper">
-                <h3>Николай Тарасов</h3>
-                <p>Marketing</p>
+                <h3 class="item__title">Николай Тарасов</h3>
+                <p class="item__desc">Marketing</p>
                 <ul class="socials list">
                   <li class="socials__socials-item">
                     <a
@@ -356,8 +361,8 @@
             <li class="team__item card-set-item">
               <img src="images/team/ui_designer.jpg" alt="ui_designer" width="270" height="260" />
               <div class="team__item-wrapper">
-                <h3>Михаил Ермаков</h3>
-                <p>UI Designer</p>
+                <h3 class="item__title">Михаил Ермаков</h3>
+                <p class="item__desc">UI Designer</p>
                 <ul class="socials list">
                   <li class="socials__socials-item">
                     <a
@@ -667,6 +672,49 @@
       </div>
     </div>
 
+    <!-- Mobile menu -->
+
+    <div class="menu-overlay" data-menu>
+      <div class="menu-container">
+
+        <button class="menu-btn" type="button" data-menu-close>
+          <svg class="menu-close-icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-close" class="header__icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-nav list">
+          <li class="mobile-nav-item">
+            <a href="" class="mobile-link link">Студия</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="" class="mobile-link link">Портфолио</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a href="" class="mobile-link link">Контакты</a>
+          </li>
+        </ul>
+        <div class="mobile-contacts">
+          <a class="mobile-contacts-link link" href="+380441111111">+38 096 111 11 11</a>
+          <a class="mobile-contacts-mail link" href="info@devstudio.com">info@devstudio.com</a>
+        </div>
+        <ul class="mobile-socilas list">
+          <li class="mobile-socials-item">
+            <a href="" class="mobile-socials-link link">Instagram</a>
+          </li>
+          <li class="mobile-socilas-item">
+            <a href="" class="mobile-socials-link link">Twitter</a>
+          </li>
+          <li class="mobile-socilas-item">
+            <a href="" class="mobile-socials-link link">Facebook</a>
+          </li>
+          <li class="mobile-socilas-item">
+            <a href="" class="mobile-socials-link link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
