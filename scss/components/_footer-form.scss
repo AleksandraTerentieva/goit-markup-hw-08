@@ -1,14 +1,17 @@
 .container-footer-form {
-  display: flex;
-  align-items: flex-end;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+  }
 }
 
-.footer__form {
+/* .footer__form {
   display: flex;
   flex-direction: column;
   margin-left: 93px;
   margin-right: 10px;
-}
+} */
 
 .footer-label {
   display: flex;
@@ -23,11 +26,12 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+  margin-top: 60px;
+  text-align: center;
 }
 
 .footer__input {
   background-color: transparent;
-  width: 358px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -35,4 +39,13 @@
   padding: 15px 16px;
 
   color: var(--btn-txt-cl);
+
+  @media screen and (min-width: 480px) {
+    width: 358px;
+  }
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
