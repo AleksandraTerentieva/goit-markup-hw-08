@@ -7,20 +7,24 @@
 .btn {
   @extend %reset-list;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 8px;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 30px;
-  margin-bottom: 50px;
-  border-radius: 4px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 
   .btn-mode-ligh {
     color: var(--main-txt-cl);
   }
 }
+
 
 .hero__btn {
   display: block;
@@ -47,16 +51,19 @@
 }
 
 .work-btn-item {
-  padding: 6px 22px;
-  border: none;
-  font-family: inherit;
+  background-color: var(--light-bg-cl);
+  color: var(--main-txt-cl);
+  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: calc(26 / 16);
+  line-height: 1.63;
   letter-spacing: 0.03em;
-  background-color: var(--light-bg-cl);
-  cursor: pointer;
-  transition: background-color var(--animation), color var(--animation);
+
+  padding: 6px 22px;
+
+  border: 0;
+  border-radius: 4px;
+  transition: background-color 250ms var(--animation), color 250ms var(--animation);
 
   &:hover,
   &:focus {
@@ -64,6 +71,7 @@
     color: var(--btn-txt-cl);
   }
 }
+
 
 .modal__btn {
   position: absolute;

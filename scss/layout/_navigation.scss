@@ -13,6 +13,10 @@
   @extend %reset-list;
   display: flex;
   gap: 50px;
+  
+   @media screen and (min-width: 768px) {
+    margin-right: 0;
+  }
 }
 
 .nav__link {

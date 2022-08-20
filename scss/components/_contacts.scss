@@ -9,11 +9,27 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 0;
+    font-size: 14px;
+    line-height: 1.1428571429;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 30px;
   }
 }
 
 .contacts__mail {
   margin-right: 50px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+    display: inline-flex;
+    align-items: center;
+  }
 }
 
 .contacts__phone,

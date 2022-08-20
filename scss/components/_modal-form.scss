@@ -33,7 +33,16 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(0.3) rotate(1turn);
   }
+
+  @media screen and (min-width:480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width:1200px) {
+    width: auto;
+  }
 }
+
 
 .form__modal {
   display: flex;
@@ -126,6 +135,10 @@
   & {
     font-size: 14px;
     margin-left: 7px;
+  }
+
+  @media screen and (min-width:480px) {
+    font-size: 12px;
   }
 }
 

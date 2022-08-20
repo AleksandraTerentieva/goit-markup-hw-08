@@ -13,6 +13,7 @@
   display: flex;
   align-items: center;
   color: var(--main-txt-cl);
+  
 }
 
 .header__logo {
@@ -31,5 +32,9 @@
 
   .header__logo-acent {
     color: var(--accent-txt-cl);
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 84px;
   }
 }
