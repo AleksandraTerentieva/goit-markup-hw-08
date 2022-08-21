@@ -1,25 +1,17 @@
 .menu-btn {
-  margin-left: auto;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 40px;
-  height: 40px;
-  padding: 0;
-
   background-color: rgba(0, 0, 0, 0);
   border: none;
-
-  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 10px;
+  right: 15px;
 
   @media screen and (min-width: 768px) {
     display: none;
   }
 
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
   &:hover .header__icon-menu {
     fill: var(--accent-txt-cl);
   }
@@ -28,7 +20,6 @@
   }
 }
 
-
 .header__icon-close {
   &:hover,
   &:focus {
@@ -36,11 +27,9 @@
   }
 }
 
-
 .menu-overlay {
   z-index: 100;
   overflow-y: scroll;
-  padding: 48px 40px;
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -70,6 +59,10 @@
   display: flex;
   flex-direction: column;
   background-color: #fff;
+
+  @media screen and (min-width: 480px) {
+    height: 480px;
+  }
 }
 
 .mobile-nav {
@@ -106,7 +99,6 @@
 
 .header__list-contact {
   @extend %reset-list;
-  margin-top: 302px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -146,6 +138,7 @@
 
 .header__link-contact {
   @extend %reset-link;
+  font-weight: 500;
   font-size: 24px;
   transition: font-size 250ms var(--animation);
 
@@ -162,7 +155,6 @@
 
     &:hover {
       font-size: 12px;
-      
     }
     &--email {
       padding-top: 21px;
@@ -257,44 +249,31 @@
   }
 }
 
-/* .header__btn {
-  display: inline-flex;
-  background-color: transparent;
-  border: none;
-  margin: 0;
-  padding: 0;
-  z-index: 500;
-
-  position: fixed;
-    top: 10px;
-    right: 15px;
-  & .header__icon-close {
-    display: none;
-    transition: fill 250ms $cubic;
-  }
-
-  & .header__icon-menu {
-    transition: fill 250ms $cubic;
-  }
-
-  &.is-open .header__icon-close {
-    display: block;
-  }
-  &.is-open .header__icon-menu {
-    display: none;
-  }
-
+/* .mobile-nav,
+.header__list-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   @media screen and (min-width: 768px) {
-    display: none;
-  }
-  &:hover .header__icon-menu {
-    fill: $accent-color;
-  }
-  &:hover .header__icon-close {
-    fill: $accent-color;
+    flex-direction: row;
   }
 }
 
-.header__btn-svg {
-  fill: $main-color;
+.mobile-nav{
+  @media screen and (min-width: 768px) {
+    gap: 50px;
+  }
+}
+
+.header__list-contact {
+  margin-top: auto;
+  @media screen and (min-width: 768px) {
+    @include flex();
+    flex-direction: column;
+    gap: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 30px;
+  }
 } */

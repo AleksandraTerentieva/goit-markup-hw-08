@@ -3,6 +3,11 @@
   display: flex;
   padding-bottom: 94px;
   padding-top: 94px;
+
+  @media screen and (min-width: 480px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
 }
 
 .clients__list {
@@ -18,26 +23,38 @@
 
 .client__link {
   @extend %reset-link;
-  display: flex;
-  width: 170px;
-  height: 92px;
-  text-align: center;
-  justify-content: center;
-  color: var(--links-txt-cl);
-  background-color: var(--btn-txt-cl);
-  border: 1px solid var(--links-txt-cl);
-  border-radius: 4px;
-  transition: color var(--animation), background-color var(--animation),
-    border-color var(--animation);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width:480px) {
+      width: 210px;
+      height: 92px;
+    }
+      margin: 0;
+      border: 1px solid #afb1b8;
+      border-radius: 4px;
+      color: #afb1b8;
+    
+      transition: border 250ms var(--animation), color 250ms var(--animation);
+    
+      &:hover,
+      &:focus {
+        border-color: var(--accent-txt-cl);
+        cursor: pointer;
+        color: var(--accent-txt-cl);
+      }
+    
+      & .clients__icon {
+        fill: currentColor;
+      }
+      @media screen and (min-width: 768px) {
+        width: 226px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: 170px;
+      }
+  }
 
-    &:hover,
-    &:focus {
-  color: var(--accent-txt-cl);
-  background-color: var(--btn-txt-cl);
-  border-color: var(--accent-txt-cl);
-  transition: var(--animation);
-}
-}
 
 .client__icon {
   display: flex;

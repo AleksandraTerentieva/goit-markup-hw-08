@@ -4,6 +4,12 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--indent);
+
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+  }
 }
 
 .card-set-item {
