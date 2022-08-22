@@ -5,9 +5,46 @@
   padding-top: 94px;
 
   @media screen and (min-width: 480px) {
-    padding-bottom: 60px;
     padding-top: 60px;
+    padding-bottom: 60px;
   }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.clients__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  
+  color: #212121;
+  
+  @media screen and (min-width: 480px) {
+  font-size: 28px;
+  margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+  font-size: 28px;
+  margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+
 }
 
 .clients__list {
@@ -23,38 +60,37 @@
 
 .client__link {
   @extend %reset-link;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    @media screen and (min-width:480px) {
-      width: 210px;
-      height: 92px;
-    }
-      margin: 0;
-      border: 1px solid #afb1b8;
-      border-radius: 4px;
-      color: #afb1b8;
-    
-      transition: border 250ms var(--animation), color 250ms var(--animation);
-    
-      &:hover,
-      &:focus {
-        border-color: var(--accent-txt-cl);
-        cursor: pointer;
-        color: var(--accent-txt-cl);
-      }
-    
-      & .clients__icon {
-        fill: currentColor;
-      }
-      @media screen and (min-width: 768px) {
-        width: 226px;
-      }
-      @media screen and (min-width: 1200px) {
-        width: 170px;
-      }
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: 480px) {
+    width: 210px;
+    height: 92px;
+  }
+  margin: 0;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+
+  transition: border 250ms var(--animation), color 250ms var(--animation);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-txt-cl);
+    cursor: pointer;
+    color: var(--accent-txt-cl);
   }
 
+  & .clients__icon {
+    fill: currentColor;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+}
 
 .client__icon {
   display: flex;
